@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>主页</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            width: 100vw;
+            height: 100vh;
+            background: url(img/bizi.gif);
+            font-family: "楷体";
+            font-weight: 600;
+            font-size: 12px;
+        }
+        #top {
+            display: flex;
+        }
+        #top span {
+            display: block;
+            width: 60px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #top span a {
+            text-decoration: none;
+            color: pink;
+            padding: 8px;
+        }
+        #top span a:hover {
+            font-size: 18px;
+            color: #fff;
+            background-color: #f40;
+            border-radius: 15px;
+        }
+        #logo {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .G {
+            color: blue;
+            font-size: 100px;
+        }
+        .o {
+            color: red;
+            font-size: 50px;
+            font-weight: 600;
+        }
+        .O {
+            color: yellow;
+            font-size: 50px;
+            font-weight: 600;
+        }
+        .g {
+            color: blue;
+            font-size: 50px;
+            font-weight: 600;
+        }
+        .l {
+            color: green;
+            font-size: 50px;
+            font-weight: 600;
+        }
+        .e {
+            display: inline-block;
+            color: red;
+            font-size: 50px;
+            font-weight: 600;
+            transform: rotate(-30deg);
+/*          -ms-transform:rotate(-30deg); Internet Explorer 
+            -moz-transform:rotate(-30deg);  Firefox 
+            -webkit-transform:rotate(-30deg);  Safari 和 Chrome */ 
+        }
+        #logo .search {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 60vw;
+        }
+        #logo .word {
+            color: #000;
+            font-family: "楷体";
+            font-weight: 600;
+            outline: none;
+            height: 40px;
+            width: 70%;
+            font-size: 20px;
+            text-align: center;
+            border: 3px solid blue;
+            /* border-radius: 10px; */
+            border-right: none;
+            border-bottom-left-radius: 10px;
+            border-top-left-radius: 10px;
+        }
+        #logo .submit {
+            padding: 6px;
+            border: 3px solid blue;
+            height: 40px;
+            background-color: #fff;
+            border-left: none;
+            border-bottom-right-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        #nav {
+            margin: 20px auto;
+            width: 50vw;
+            display: flex;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+        }
+        #nav .box {
+            width: 15vw;
+            height: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #nav .box .item {
+            border-radius: 50px;
+            width: 50px;
+            height: 50px;
+            overflow: hidden;
+        }
+        #nav .box img {
+            width: 100%;
+            height: 100%;
+            opacity: 0.5;
+        }
+        #nav .box img:hover {
+            width: 111%;
+            height: 111%;
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+        <div id="top">
+               <span><a href="pc/index.html" target="_blank">APP</a></span>
+               <span><a href="dailyMovie/index.html" target="_blank">电影</a></span>
+               <span><a href="#" target="_blank">项目</a></span>
+               <span><a href="#" target="_blank">项目</a></span>
+               <span><a href="#" target="_blank">项目</a></span>
+        </div>
+
+        <marquee behavior="" direction="">
+            <h1>我的主页</h1>
+        </marquee>
+
+        <div id="logo">
+            <p>
+                <span class="G">G</span><span class="o">O</span><span class="O">O</span><span class="g">g</span><span class="l">l</span><span class="e">e</span>
+            </p>
+            <form action="https://www.baidu.com/s" target="_blank">
+                <div class="search"><input type="search" name="wd" class="word"><input type="image" class="submit" src="img/目标，导航.png"></div>
+            </form>
+        </div>
+
+        <div id="nav">
+            <div class="box"><div class="item"><a href="https://www.douyin.com/" target="_blank"><img src="img/douy.png" alt=""></a></div></div>
+            <div class="box"><div class="item"><a href="https://www.bilibili.com/" target="_blank"><img src="img/bl.png" alt=""></a></div></div>
+            <div class="box"><div class="item"><a href="https://www.runoob.com/" target="_blank"><img src="img/cn.png" ></a></div></div>
+            <div class="box"><div class="item"><a href="https://www.runoob.com/" target="_blank"><img src="img/cn.png" ></a></div></div>
+            <div class="box"><div class="item"><a href="https://www.runoob.com/" target="_blank"><img src="img/cn.png" ></a></div></div>
+            <div class="box"><div class="item"><a href="https://www.runoob.com/" target="_blank"><img src="img/cn.png" ></a></div></div>
+        </div>
+
+</html>

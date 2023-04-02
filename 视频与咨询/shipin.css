@@ -1,0 +1,153 @@
+@import url(reset.css);
+@font-face {
+    font-family: 'iconfont';
+    src: url('../font/iconfont.woff2') format('woff2'),
+         url('../font/iconfont.woff') format('woff'),
+         url('../font/iconfont.tff') format('truetype');
+  }
+  .iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+/* 顶部导航 */
+#navTop {
+    height: 44px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#navTop span {
+    font-size: 16px;
+    color: #999;
+    width: 40px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    cursor: pointer;
+}
+#navTop span.line::after {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 3px;
+    background-color: #f40;
+}
+
+/* 信息栏 */
+#message {
+    margin-top: 10px;
+    margin-bottom: 60px;
+}
+#message img{
+    width: 100vw;
+    height: 250px;
+}
+#message .pr {
+    position: relative;
+}
+#message .textmessage {
+    font-size: 16px;
+    padding: 20px;
+    color: #fff;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+#message .pr .iconfont {
+    font-size: 80px;
+    padding: 20px;
+    color: #fff;
+    position: absolute;
+    left: 45%;
+    top: 40%;
+    opacity: 0.3;
+}
+#message .left img {
+    width: 30px;
+    height: 30px;
+}
+#message .dflex {
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+}
+#message .dflex span {
+    font-size: 16px;
+    color: #000;
+}
+#message .left {
+    width: 50%;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+}
+#message .right {
+    width: 50%;
+    padding-right: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#message .dflex .c9 {
+    color: #999;
+}
+
+/* 咨询信息样式 */
+#zx li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 78px;
+    padding: 0 20px;
+    transition: background-color 1.5s;
+    border-bottom: 1px solid #ccc;
+}
+#zx li:hover {
+    background: #ffe4dc;
+}
+#zx .zxImg img {
+    width: 100%;
+    height: 75px;
+    margin-bottom: 2px;
+}
+#zx .txt {
+    height: 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 16px;
+}
+#zx .txt h4 {
+    font-size: 14px;
+    color: #999;
+}
+  /* 底部导航栏 */
+  #footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    background: #fff;
+  }
+  #footer a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #footer a .iconfont {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+  #footer a span{
+    font-size: 12px;
+    color: #000;
+  }
+  #footer .incolor span{
+    color: #c03d37;
+  }
